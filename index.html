@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a Test by Santiago Fidelio - Lara Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,900&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <style>
+        /*Basics resets for HTML */
+            * {
+                box-sizing: border-box;
+                margin:0;
+                padding:0;
+                font-family: var(--font-sans-lara);
+            }
+
+            html{
+                font-size: 62.5%;
+                scroll-behavior: smooth;
+                background-color: var(--primary-background-color);
+            }
+
+            main{
+                background-color:var(--primary-background-color);
+            }
+            :root{
+                --color-purple-lara:#510D4E;
+                --color-white-lara: #F4F4F4;
+                --color-dark-lara:#020202;
+
+                --font-serif-lara:'Lora', serif;
+                --font-sans-lara:'Lato', sans-serif;
+
+                --medianil:1rem;
+            }
+
+            body{
+                width:100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+
+        /* END basic resets for HTML */
+        /* header, header figure, footer, footer figure {
+            width:100%;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+        header{
+            height: 20vh;
+        } */
+
+        main{
+            background-image: url(https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1567&q=80);
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main div{
+            max-width: 80%;
+            background-color: var(--color-white-lara);
+            padding:calc(var(--medianil) *2);
+            opacity: .8;
+
+        }
+
+        figure img{
+            max-width:300px;
+            
+        }
+
+        h1{
+            font-family: var(--font-serif-lara);
+            color: var(--color-purple-lara);
+            font-size: 3.5rem;
+            line-height: 3.4rem;
+            margin-bottom: calc(var(--medianil) *2);
+        }
+
+        h2{
+            font-family: var(--font-serif-lara);
+            color: var(--color-dark-lara);
+            font-size: 2.5rem;
+            line-height: 3.4rem;
+            margin-bottom: calc(var(--medianil) *2);
+        }
+        h2::before, h2::after{
+            content:'"';
+            font-size: 5rem;
+            opacity: .5;
+            line-height: 1rem;            
+        }
+
+        p{
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: .8;
+            padding-bottom:calc(var(--medianil) *2);
+        }
+        form{
+            width:100%;
+        }
+
+        input{
+            min-height: calc(var(--medianil)*4);
+            margin-bottom: calc(var(--medianil));
+            border: 1px solid var(--color-purple-lara);
+            border-radius: 5px;
+            font-size: 1.5rem;
+            padding:var(--medianil);
+        }
+        input[type="submit"]{
+            font-size: 2rem;
+            background-color: var(--color-purple-lara);
+            font-family: var(--font-sans-lara);
+            font-weight: bold;
+            color:var(--color-white-lara);
+            padding:var(--medianil);
+        }
+
+
+
+
+        @media (min-width: 360px) {
+            header figure img{
+                width:50%;
+            }
+
+            header{
+                padding: calc(var(--medianil) *2);
+            }
+            input{
+                width:100%
+            }
+
+        }
+
+        @media (min-width:1317px) {
+            main div{
+                max-width: 50%;                
+                padding:calc(var(--medianil)* 2);
+                max-height: 90vh;
+            }
+            main{
+                display: flex;
+                justify-content: flex-end;
+                
+                padding:calc(var(--medianil)* 8);
+            }
+            main figure{
+                display: flex;
+                justify-content: center;
+                padding-bottom:20px;
+
+            }
+            main figure img{
+                max-height: 80px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <header>
+
+    </header> -->
+    <main>
+        <div>
+            <figure>
+                <img src="resources/logo-Lara-curves.svg" alt="">
+            </figure>
+            <h1>
+                Identificar las partes del ecosistema digital para tu emprendimiento. 
+                
+            </h1>
+            <h2>¿Qué historia estás contando con tu marca?</h2>
+            <p>
+                 ¡No te pierdas mi charla para poder a  empezar a identificar las partes del ecosistema digital y llevar tu crecimiento profesional  al siguiente nivel!  
+    
+            </p>
+            <form action="">
+                <input type="input" placeholder="Name">
+                <input type="email" placeholder="email">
+                <input type="submit" value="Quiero Participar">
+            </form>
+        </div>
+
+            
+    </main>
+    <!-- <footer>
+        <figure>
+            <img src="resources/logo-Lara-curves.svg" alt="">
+        </figure>
+    </footer> -->
+
+</body>
+</html>
